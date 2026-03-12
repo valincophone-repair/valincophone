@@ -1,22 +1,22 @@
 <!--
 Site : Valinco Phone
-Auteur : Valinco.cyber@gmail.com
+Auteur : Nicolasadonto@gmail.com
 Lieu : Propriano (Corse-du-Sud)
 
 Page : index.html
 Description : page d'accueil du site présentant l'atelier, les services et le point de dépôt Pulsat.
 
-Dernière modification : 2026-03-10
+Dernière modification : 2026-03-12
 -->
 
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<!-- ================================= -->
-<!-- META / SEO / STYLE -->
-<!-- ================================= -->
+  <!-- ================================= -->
+  <!-- META / SEO / STYLE -->
+  <!-- ================================= -->
   <meta charset="utf-8">
-<meta name="google-site-verification" content="y23bg_1Cq18GhfLMKLJxg19EaMHYp-9vz66ez85fakI" />
+  <meta name="google-site-verification" content="y23bg_1Cq18GhfLMKLJxg19EaMHYp-9vz66ez85fakI">
   <title>Valinco Phone – ex-Valinco Cyber | Réparation de téléphones à Propriano</title>
 
   <meta name="description" content="Valinco Phone est un atelier indépendant de réparation de téléphones à Propriano. Dépôt et retrait chez Pulsat Propriano. Qualité, pédagogie et confiance.">
@@ -25,15 +25,22 @@ Dernière modification : 2026-03-10
   <style>
     :root {
       --blue: #0d6efd;
+      --blue-dark: #0a58ca;
       --bg: #f7f9fb;
       --text: #222;
       --muted: #555;
       --radius: 14px;
       --shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+      --shadow-soft: 0 6px 18px rgba(0, 0, 0, 0.08);
+      --card: #ffffff;
     }
 
     * {
       box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 
     body {
@@ -58,7 +65,7 @@ Dernière modification : 2026-03-10
 
     /* HEADER */
     header {
-      background: var(--blue);
+      background: linear-gradient(135deg, var(--blue), var(--blue-dark));
       padding: 1.8rem 1rem;
       color: #fff;
     }
@@ -98,6 +105,28 @@ Dernière modification : 2026-03-10
       font-size: 1.05rem;
     }
 
+    /* HERO */
+    .hero {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 1rem 1rem 0;
+    }
+
+    .hero figure {
+      margin: 0;
+      overflow: hidden;
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+      background: #fff;
+    }
+
+    .hero img {
+      width: 100%;
+      height: 340px;
+      object-fit: cover;
+      display: block;
+    }
+
     /* CONTENU */
     main {
       max-width: 900px;
@@ -106,12 +135,13 @@ Dernière modification : 2026-03-10
     }
 
     section {
-      margin-bottom: 2.5rem;
+      margin-bottom: 2.8rem;
     }
 
     h3 {
       color: var(--blue);
-      margin: 0 0 .6rem;
+      margin: 0 0 .8rem;
+      font-size: 1.4rem;
     }
 
     ul {
@@ -129,6 +159,19 @@ Dernière modification : 2026-03-10
       padding: 1rem;
       border-radius: 10px;
       margin-top: 1rem;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 14px;
+      padding: 1rem 1.1rem;
+      box-shadow: var(--shadow-soft);
+      margin-top: 1rem;
+    }
+
+    .card p:first-child {
+      margin-top: 0;
     }
 
     /* GRILLES */
@@ -157,6 +200,12 @@ Dernière modification : 2026-03-10
       border-radius: var(--radius);
       box-shadow: var(--shadow);
       display: block;
+      transition: transform .18s ease, box-shadow .18s ease;
+    }
+
+    .grid img:hover {
+      transform: scale(1.02);
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.18);
     }
 
     figcaption {
@@ -169,17 +218,53 @@ Dernière modification : 2026-03-10
     a {
       color: inherit;
       text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    .quick-contact {
+      background: linear-gradient(135deg, #eef4ff, #f8fbff);
+      border: 1px solid #d8e5ff;
+      border-radius: 16px;
+      padding: 1.2rem;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .quick-contact p {
+      text-indent: 0;
+    }
+
+    .call-button {
+      display: inline-block;
+      background: var(--blue);
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 18px;
+      border-radius: 10px;
+      margin-top: 10px;
+      font-weight: 600;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .call-button:hover {
+      background: var(--blue-dark);
     }
 
     /* LIENS BAS DE PAGE */
     .footer-links {
       text-align: center;
-      margin-top: 20px;
+      margin-top: 30px;
       text-indent: 0;
     }
 
     .footer-links a {
-      margin: 0 20px;
+      display: inline-block;
+      margin: 8px 20px;
+      padding: 6px 10px;
+      border-radius: 8px;
+    }
+
+    .footer-links a:hover {
+      background: #eef4ff;
     }
 
     /* FOOTER */
@@ -189,6 +274,35 @@ Dernière modification : 2026-03-10
       color: #666;
       padding: 2rem 1rem;
       border-top: 1px solid #ddd;
+    }
+
+    .useful-links {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 1rem 2rem;
+      text-align: center;
+    }
+
+    .useful-links h3 {
+      margin-bottom: 1rem;
+    }
+
+    .useful-links p {
+      text-indent: 0;
+      margin: 0;
+    }
+
+    .useful-links a {
+      display: inline-block;
+      margin: 8px 10px;
+      padding: 8px 12px;
+      border-radius: 8px;
+      background: #eef4ff;
+      text-decoration: none;
+    }
+
+    .useful-links a:hover {
+      background: #dbe9ff;
     }
 
     /* RESPONSIVE */
@@ -210,12 +324,24 @@ Dernière modification : 2026-03-10
       .grid img {
         height: 240px;
       }
+
+      .hero img {
+        height: 240px;
+      }
+
+      .logo {
+        height: 110px;
+      }
+
+      .header-text h1 {
+        font-size: 2.4rem;
+      }
     }
   </style>
 </head>
 
 <body>
-<!-- HEADER : logo + titre du site -->
+  <!-- HEADER : logo + titre du site -->
   <header>
     <div class="header-wrapper">
       <div class="header-text">
@@ -227,11 +353,19 @@ Dernière modification : 2026-03-10
       <img src="img/logo_valinco_cyber.png" alt="Logo Valinco Phone" class="logo">
     </div>
   </header>
-<!-- ================================= -->
-<!-- CONTENU PRINCIPAL -->
-<!-- ================================= -->
+
+  <!-- BANNIÈRE VISUELLE -->
+  <section class="hero">
+    <figure>
+      <img src="img/banniere_1.png" alt="Ensemble avec Valinco Phone">
+    </figure>
+  </section>
+
+  <!-- ================================= -->
+  <!-- CONTENU PRINCIPAL -->
+  <!-- ================================= -->
   <main>
-<!-- SECTION : présentation de l'atelier -->
+    <!-- SECTION : présentation de l'atelier -->
     <section>
       <h3>Réparer son téléphone chez Valinco Phone</h3>
 
@@ -250,13 +384,13 @@ Dernière modification : 2026-03-10
       <div class="note">
         <p><strong>Types de réparations réalisées à l’atelier</strong></p>
         <ul>
-          <li>Remplacement d’écran cassé ou endommagé</li>
-          <li>Remplacement de batterie</li>
-          <li>Réparation ou remplacement de connecteur de charge</li>
-          <li>Réparation de caméra</li>
-          <li>Remplacement de haut-parleur ou microphone</li>
-          <li>Nettoyage et remise en état de cartes électroniques</li>
-          <li>Diagnostic et recherche de panne</li>
+          <li>📱 Remplacement d’écran cassé ou endommagé</li>
+          <li>🔋 Remplacement de batterie</li>
+          <li>🔌 Réparation ou remplacement de connecteur de charge</li>
+          <li>📷 Réparation de caméra</li>
+          <li>🔊 Remplacement de haut-parleur ou microphone</li>
+          <li>🧪 Nettoyage et remise en état de cartes électroniques</li>
+          <li>🛠 Diagnostic et recherche de panne</li>
         </ul>
         <p>
           Certaines interventions plus techniques, comme le nettoyage de cartes électroniques par ultrasons,
@@ -278,14 +412,25 @@ Dernière modification : 2026-03-10
 
       <hr>
 
-      <div>
+      <div class="quick-contact">
+        <p><strong>Besoin d’une réparation ou d’un conseil ?</strong></p>
+        <p>
+          Contacte directement Valinco Phone pour un premier échange, un diagnostic ou une information sur une pièce.
+        </p>
+        <a href="tel:+33754372233" class="call-button">Appeler l’atelier</a>
+      </div>
+
+      <hr>
+
+      <div class="card">
         <p>
           Grâce au point de dépôt chez <strong>Pulsat Propriano</strong>, il est possible de déposer et récupérer
           facilement un appareil pour réparation.
         </p>
       </div>
     </section>
-<!-- SECTION : dépôt et retrait chez Pulsat Propriano -->
+
+    <!-- SECTION : dépôt et retrait chez Pulsat Propriano -->
     <section>
       <h3>Dépôt et retrait</h3>
       <p>
@@ -318,7 +463,8 @@ Dernière modification : 2026-03-10
         </figure>
       </div>
     </section>
-<!-- SECTION : exemples de réparations réalisées -->
+
+    <!-- SECTION : exemples de réparations réalisées -->
     <section>
       <h3>L’atelier</h3>
       <p>Quelques exemples de réparations courantes :</p>
@@ -359,24 +505,27 @@ Dernière modification : 2026-03-10
     <section>
       <h3>Chez <strong>Valinco Phone</strong>, à l'Atelier</h3>
 
-      <p>
-        Chaque réparation est réalisée avec soin et sérieux.
-        Les pièces utilisées sont sélectionnées avec attention et bénéficient d’une garantie.
-      </p>
-      <p>
-        Le technicien dispose de nombreuses
-        années d’expérience dans le domaine des réparations de téléphones et de smartphones de différentes marques
-        (iPhone, Samsung, Xiaomi, Huawei et autres).
-        Chaque appareil fait l’objet d’un diagnostic
-        précis, puis de tests après intervention afin de vérifier que tout fonctionne correctement.
-      </p>
+      <div class="card">
+        <p>
+          Chaque réparation est réalisée avec soin et sérieux.
+          Les pièces utilisées sont sélectionnées avec attention et bénéficient d’une garantie.
+        </p>
+        <p>
+          Le technicien dispose de nombreuses
+          années d’expérience dans le domaine des réparations de téléphones et de smartphones de différentes marques
+          (iPhone, Samsung, Xiaomi, Huawei et autres).
+          Chaque appareil fait l’objet d’un diagnostic
+          précis, puis de tests après intervention afin de vérifier que tout fonctionne correctement.
+        </p>
 
-      <p>
-        L’objectif est simple : proposer un service de réparation de qualité, clair et honnête,
-        afin que chaque client reparte avec un téléphone réparé dans les meilleures conditions.
-      </p>
+        <p>
+          L’objectif est simple : proposer un service de réparation de qualité, clair et honnête,
+          afin que chaque client reparte avec un téléphone réparé dans les meilleures conditions.
+        </p>
+      </div>
     </section>
-<!-- SECTION : informations de contact -->
+
+    <!-- SECTION : informations de contact -->
     <section>
       <h3>Contact</h3>
       <p style="text-indent:0;">
@@ -385,13 +534,25 @@ Dernière modification : 2026-03-10
         📞 <a href="tel:+33754372233">+33 7 54 37 22 33</a>
       </p>
     </section>
-<!-- SECTION : autres liens -->
+
+    <!-- SECTION : autres liens -->
     <p class="footer-links">
       <a href="FAQ_page.html">FAQ</a>
       <a href="trouver-modele-telephone.html">Trouver le modèle de son téléphone</a>
     </p>
-
   </main>
+
+  <!-- SECTION : liens utiles -->
+  <div class="useful-links">
+    <h3>Liens utiles</h3>
+    <p>
+      <a href="https://www.google.com" target="_blank" rel="noopener">Google</a>
+      <a href="https://github.com/valincophone-repair" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.mairie-propriano.com/" target="_blank" rel="noopener">Mairie de Propriano</a>
+      <a href="https://maps.google.com" target="_blank" rel="noopener">Google Maps</a>
+      <a href="https://magasins.pulsat.fr/162-pulsat-propriano" target="_blank" rel="noopener">Pulsat Propriano</a>
+    </p>
+  </div>
 
   <footer>
     © Valinco Phone – ex-Valinco Cyber<br>
@@ -401,4 +562,3 @@ Dernière modification : 2026-03-10
 
 </body>
 </html>
-
