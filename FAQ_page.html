@@ -1,25 +1,48 @@
+<!--
+Site : Valinco Phone
+Auteur : Nicolasadonto@gmail.com
+Lieu : Propriano (Corse-du-Sud)
+
+Page : FAQ_page.html
+Description : Foire aux questions.
+
+Dernière modification : 2026-03-14
+-->
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="utf-8">
-<title>FAQ – Réparation de téléphones à Propriano | Valinco Phone</title>
+  <!-- ================================= -->
+  <!-- META / SEO / STYLE -->
+  <!-- ================================= -->
+  <meta charset="utf-8">
+  <meta name="author" content="Valinco Phone">
+  <meta name="robots" content="index, follow">
+  <meta name="google-site-verification" content="y23bg_1Cq18GhfLMKLJxg19EaMHYp-9vz66ez85fakI">
+  <meta name="description" content="Valinco Phone est un atelier indépendant de réparation de téléphones à Propriano. Dépôt et retrait chez Pulsat Propriano. Qualité, pédagogie et confiance.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="Questions fréquentes sur la réparation de téléphones à Propriano : délais, types de réparations, dépôt chez Pulsat Propriano et fonctionnement de l’atelier Valinco Phone.">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valinco Phone – ex-Valinco Cyber | Foire aux Questions</title>
 
   <style>
     :root {
       --blue: #0d6efd;
+      --blue-dark: #0a58ca;
       --bg: #f7f9fb;
       --text: #222;
       --muted: #555;
       --radius: 14px;
       --shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+      --shadow-soft: 0 6px 18px rgba(0, 0, 0, 0.08);
+      --card: #ffffff;
     }
 
     * {
       box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 
     body {
@@ -44,7 +67,7 @@
 
     /* HEADER */
     header {
-      background: var(--blue);
+      background: linear-gradient(135deg, var(--blue), var(--blue-dark));
       padding: 1.8rem 1rem;
       color: #fff;
     }
@@ -84,6 +107,28 @@
       font-size: 1.05rem;
     }
 
+    /* HERO */
+    .hero {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 1rem 1rem 0;
+    }
+
+    .hero figure {
+      margin: 0;
+      overflow: hidden;
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+      background: #fff;
+    }
+
+    .hero img {
+      width: 100%;
+      height: 340px;
+      object-fit: cover;
+      display: block;
+    }
+
     /* CONTENU */
     main {
       max-width: 900px;
@@ -92,12 +137,13 @@
     }
 
     section {
-      margin-bottom: 2.5rem;
+      margin-bottom: 2.8rem;
     }
 
     h3 {
       color: var(--blue);
-      margin: 0 0 .6rem;
+      margin: 0 0 .8rem;
+      font-size: 1.4rem;
     }
 
     ul {
@@ -115,6 +161,19 @@
       padding: 1rem;
       border-radius: 10px;
       margin-top: 1rem;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 14px;
+      padding: 1rem 1.1rem;
+      box-shadow: var(--shadow-soft);
+      margin-top: 1rem;
+    }
+
+    .card p:first-child {
+      margin-top: 0;
     }
 
     /* GRILLES */
@@ -143,6 +202,12 @@
       border-radius: var(--radius);
       box-shadow: var(--shadow);
       display: block;
+      transition: transform .18s ease, box-shadow .18s ease;
+    }
+
+    .grid img:hover {
+      transform: scale(1.02);
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.18);
     }
 
     figcaption {
@@ -155,17 +220,53 @@
     a {
       color: inherit;
       text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    .quick-contact {
+      background: linear-gradient(135deg, #eef4ff, #f8fbff);
+      border: 1px solid #d8e5ff;
+      border-radius: 16px;
+      padding: 1.2rem;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .quick-contact p {
+      text-indent: 0;
+    }
+
+    .call-button {
+      display: inline-block;
+      background: var(--blue);
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 18px;
+      border-radius: 10px;
+      margin-top: 10px;
+      font-weight: 600;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .call-button:hover {
+      background: var(--blue-dark);
     }
 
     /* LIENS BAS DE PAGE */
     .footer-links {
       text-align: center;
-      margin-top: 20px;
+      margin-top: 30px;
       text-indent: 0;
     }
 
     .footer-links a {
-      margin: 0 20px;
+      display: inline-block;
+      margin: 8px 20px;
+      padding: 6px 10px;
+      border-radius: 8px;
+    }
+
+    .footer-links a:hover {
+      background: #eef4ff;
     }
 
     /* FOOTER */
@@ -175,6 +276,35 @@
       color: #666;
       padding: 2rem 1rem;
       border-top: 1px solid #ddd;
+    }
+
+    .useful-links {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 1rem 2rem;
+      text-align: center;
+    }
+
+    .useful-links h3 {
+      margin-bottom: 1rem;
+    }
+
+    .useful-links p {
+      text-indent: 0;
+      margin: 0;
+    }
+
+    .useful-links a {
+      display: inline-block;
+      margin: 8px 10px;
+      padding: 8px 12px;
+      border-radius: 8px;
+      background: #eef4ff;
+      text-decoration: none;
+    }
+
+    .useful-links a:hover {
+      background: #dbe9ff;
     }
 
     /* RESPONSIVE */
@@ -195,6 +325,18 @@
 
       .grid img {
         height: 240px;
+      }
+
+      .hero img {
+        height: 240px;
+      }
+
+      .logo {
+        height: 110px;
+      }
+
+      .header-text h1 {
+        font-size: 2.4rem;
       }
     }
   </style>
@@ -217,6 +359,17 @@
 </div>
 
 </header>
+
+ <!-- BANNIÈRE VISUELLE -->
+  <section class="hero">
+    <figure>
+      <img src="img/banniere_1.png" alt="Ensemble avec Valinco Phone">
+    </figure>
+  </section>
+
+  <!-- ================================= -->
+  <!-- CONTENU PRINCIPAL -->
+  <!-- ================================= -->
 
 <main>
 
@@ -300,8 +453,21 @@ Dans d’autres cas, un délai peut être nécessaire pour :
 
 </div>
 
+<div class="faq">
+
+<h3>Combien coûte un changement d’écran ?</h3>
+<ul>
+<li>Le prix dépend du modèle exact du téléphone.</li>
+<li>Un devis est toujours établi avant toute réparation.</li>
+</ul>
+
+
+</div>
+
+
 
 <div class="faq">
+
 
 <h3>Le diagnostic est-il expliqué au client ?</h3>
 
@@ -320,8 +486,28 @@ L’objectif est que le client comprenne :
 </ul>
 
 </div>
-
+    <!-- SECTION : autres liens -->
+    <p class="footer-links">
+      <a href="index.html">Retour</a>
+      <a href="trouver-modele-telephone.html">Trouver le modèle de son téléphone</a>
+      <a href="telephones-a-vendre.html">Téléphones et Ordinateur</a>
+    </p>
 </main>
+
+ <!-- SECTION : liens utiles -->
+  <div class="useful-links">
+    <h3>Liens utiles</h3>
+    <p>
+      <a href="https://valincophone-repair.github.io/valincophone/" target="_blank" rel="noopener">Accueil</a>
+      <a href="https://www.google.com" target="_blank" rel="noopener">Google</a>
+      <a href="https://github.com/valincophone-repair" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.mairie-propriano.com/" target="_blank" rel="noopener">Mairie de Propriano</a>
+      <a href="https://maps.google.com" target="_blank" rel="noopener">Google Maps</a>
+      <a href="https://magasins.pulsat.fr/162-pulsat-propriano" target="_blank" rel="noopener">Pulsat Propriano</a>
+      <a href="https://agence.orange.fr/fr/os/propriano.html" target="_blank" rel="noopener">Orange télécom</a>
+      <a href="https://www.corsegsm.com/" target="_blank" rel="noopener">CorseGSM</a>
+    </p>
+  </div>
 
 <footer>
 
