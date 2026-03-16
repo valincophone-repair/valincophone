@@ -6,7 +6,7 @@ Lieu : Propriano (Corse-du-Sud)
 Page : demande-devis.html
 Description : formulaire de demande de devis pour réparation de téléphone ou ordinateur.
 
-Dernière modification : 2026-03-15
+Dernière modification : 2026-03-16
 -->
 
 <!DOCTYPE html>
@@ -355,10 +355,15 @@ Dernière modification : 2026-03-15
         <a href="trouver-modele-telephone.html">Trouver le modèle de son téléphone</a>.
       </p>
     </div>
-
+  <!-- ================================= -->
+  <!-- DEBUT FORMULAIRE -->
+  <!-- ================================= -->
     <div class="form-card">
-      <form action="https://formspree.io/f/mnjgbblg" method="POST">
-
+     <form action="https://api.web3forms.com/submit" method="POST">
+           <input type="hidden" name="access_key" value="4a6f9a9b-37eb-404d-bd0d-cae6a9513ffc">
+           <input type="hidden" name="subject" value="Nouvelle demande de devis - Valinco Phone">
+           <input type="hidden" name="from_name" value="Formulaire site Valinco Phone">
+           <input type="hidden" name="redirect" value="https://valincophone-repair.github.io/valincophone/">
         <div class="grid-2">
           <div>
             <label for="nom">Nom</label>
@@ -427,8 +432,6 @@ Dernière modification : 2026-03-15
           <textarea id="message" name="message" required placeholder="Décris la panne le plus précisément possible : choc, écran noir, tactile partiel, batterie qui se vide vite, téléphone tombé dans l’eau, etc."></textarea>
           <p class="help">Vous pouvez aussi préciser si l’appareil fonctionne encore, si le tactile répond, ou si vous souhaitez une pièce compatible ou premium.</p>
         </div>
-
-        <input type="hidden" name="_subject" value="Nouvelle demande de devis - Valinco Phone">
 
         <div class="button-row">
           <button type="submit" class="btn">Envoyer la demande</button>
