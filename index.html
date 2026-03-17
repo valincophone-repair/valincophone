@@ -6,7 +6,7 @@ Lieu : Propriano (Corse-du-Sud)
 Page : index.html
 Description : page d'accueil du site présentant l'atelier, les services et le point de dépôt Pulsat.
 
-Dernière modification : 2026-03-15
+Dernière modification : 2026-03-17
 -->
 
 <!DOCTYPE html>
@@ -20,9 +20,20 @@ Dernière modification : 2026-03-15
   <meta name="robots" content="index, follow">
   <meta name="google-site-verification" content="y23bg_1Cq18GhfLMKLJxg19EaMHYp-9vz66ez85fakI">
   <meta name="description" content="Valinco Phone est un atelier indépendant de réparation de téléphones à Propriano. Dépôt et retrait chez Pulsat Propriano. Qualité, pédagogie et confiance.">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Valinco Phone – ex-Valinco Cyber | Réparation de téléphones à Propriano</title>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JJTMHN94L3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JJTMHN94L3');
+</script>
 
   <style>
     :root {
@@ -251,6 +262,102 @@ Dernière modification : 2026-03-15
       background: var(--blue-dark);
     }
 
+    /* AVIS GOOGLE */
+    .reviews-section {
+      margin-top: 2.5rem;
+    }
+
+    .reviews-intro {
+      background: linear-gradient(135deg, #fffaf0, #ffffff);
+      border: 1px solid #f1dfb3;
+      border-radius: 16px;
+      padding: 1.2rem;
+      box-shadow: var(--shadow-soft);
+      margin-bottom: 1rem;
+    }
+
+    .reviews-intro p,
+    .review-card p {
+      text-indent: 0;
+    }
+
+    .reviews-summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .reviews-rating {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .reviews-score {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--blue);
+      line-height: 1;
+    }
+
+    .reviews-stars {
+      font-size: 1.15rem;
+      letter-spacing: 2px;
+    }
+
+    .reviews-count {
+      color: var(--muted);
+      font-size: .95rem;
+    }
+
+    .reviews-button {
+      display: inline-block;
+      background: var(--blue);
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 18px;
+      border-radius: 10px;
+      font-weight: 600;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .reviews-button:hover {
+      background: var(--blue-dark);
+    }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-top: 1rem;
+    }
+
+    .review-card {
+      background: var(--card);
+      border-radius: 14px;
+      padding: 1rem;
+      box-shadow: var(--shadow-soft);
+      border-top: 4px solid #f4c542;
+    }
+
+    .review-card strong {
+      display: block;
+      margin-bottom: .35rem;
+    }
+
+    .review-card .stars {
+      display: block;
+      margin-bottom: .45rem;
+      font-size: .95rem;
+    }
+
+    .review-card .review-date {
+      margin-top: .7rem;
+      font-size: .86rem;
+      color: var(--muted);
+    }
     /* LIENS BAS DE PAGE */
     .footer-links {
       text-align: center;
@@ -313,7 +420,9 @@ Dernière modification : 2026-03-15
         flex-direction: column-reverse;
         text-align: center;
       }
-
+      .reviews-grid {
+        grid-template-columns: 1fr;
+      }
       p {
         text-indent: 0;
       }
@@ -524,6 +633,65 @@ Dernière modification : 2026-03-15
           L’objectif est simple : proposer un service de réparation de qualité, clair et honnête,
           afin que chaque client reparte avec un téléphone réparé dans les meilleures conditions.
         </p>
+      </div>
+    </section>
+
+    <!-- SECTION : avis clients Google -->
+    <section class="reviews-section">
+      <h3>Avis clients Google</h3>
+
+      <div class="reviews-intro">
+        <div class="reviews-summary">
+          <div class="reviews-rating">
+            <span class="reviews-score">5,0 / 5</span>
+            <span class="reviews-stars" aria-label="5 étoiles">★★★★★</span>
+            <span class="reviews-count">Basé sur 3 avis Google</span>
+          </div>
+
+          <a href="https://maps.app.goo.gl/NMqdIZWmo52siVKEh"
+             target="_blank"
+             rel="noopener"
+             class="reviews-button">
+            Voir les avis Google
+          </a>
+        </div>
+
+        <p>
+          Les avis laissés par les clients reflètent la qualité de l’accueil, du diagnostic
+          et des réparations réalisées chez Valinco Phone à Propriano.
+        </p>
+      </div>
+
+      <div class="reviews-grid">
+        <article class="review-card">
+          <strong>Prénom Nom</strong>
+          <span class="stars" aria-label="5 étoiles">★★★★★</span>
+          <p>
+            Réparation rapide, contact sérieux et explications claires.
+            Très bon accueil et téléphone récupéré en parfait état.
+          </p>
+          <p class="review-date">Avis Google</p>
+        </article>
+
+        <article class="review-card">
+          <strong>Prénom Nom</strong>
+          <span class="stars" aria-label="5 étoiles">★★★★★</span>
+          <p>
+            Travail soigné et tarifs honnêtes. Le système de dépôt chez Pulsat
+            est très pratique quand on habite dans le secteur.
+          </p>
+          <p class="review-date">Avis Google</p>
+        </article>
+
+        <article class="review-card">
+          <strong>Prénom Nom</strong>
+          <span class="stars" aria-label="5 étoiles">★★★★★</span>
+          <p>
+            Très satisfait de la réparation. Diagnostic sérieux, bon conseil,
+            et appareil rendu parfaitement fonctionnel.
+          </p>
+          <p class="review-date">Avis Google</p>
+        </article>
       </div>
     </section>
 
