@@ -6,7 +6,7 @@ Lieu : Propriano (Corse-du-Sud)
 Page : telephones-a-vendre.html
 Description : téléphones à la vente.
 
-Dernière modification : 2026-03-17
+Dernière modification : 2026-03-24
 -->
 
 <!DOCTYPE html>
@@ -331,86 +331,10 @@ Dernière modification : 2026-03-17
       Tous les téléphones proposés ici sont testés et vérifiés à l’atelier.
       Selon les modèles, certaines pièces peuvent être neuves (batterie ou écran).
     </p>
-
-    <div class="phone-grid">
-
-<div class="phone-card">
-
-<a href="img/redmi_note10_5g.webp" target="_blank">
-<img src="img/redmi_note10_5g.webp" alt="Xiaomi Redmi Note 10 5G">
-</a>
-
-<h3>Xiaomi Redmi Note 10 5G</h3>
-
-<p>
-4 Go RAM – 128 Go<br>
-Écran 6,5" FHD+ 90 Hz<br>
-Triple caméra 48 MP<br>
-Batterie 5000 mAh
-</p>
-
-<p>
-Smartphone reconditionné, testé et vérifié à l’atelier.
-</p>
-
-<p class="price">
-160 €
-</p>
-
-</div>
-
-<div class="phone-card">
-
-<a href="img/redmi_15c_4g_noir.webp" target="_blank">
-<img src="img/redmi_15c_4g_noir.webp" alt="Xiaomi Redmi 15C">
-</a>
-
-<h3>Xiaomi Redmi 15C</h3>
-
-<p>
-4 Go RAM – 128 Go<br>
-Écran 6,9" – 120 Hz<br>
-Appareil photo 50 MP<br>
-Batterie longue durée
-</p>
-
-<p>
-Smartphone neuf – Garantie constructeur 2 ans.
-</p>
-
-<p class="price">
-180 €
-</p>
-
-</div>
-
-<div class="phone-card">
-
-<a href="img/thinkpad_t490s_i5_8365u.webp" target="_blank">
-<img src="img/thinkpad_t490s_i5_8365u.webp" alt="Lenovo ThinkPad T490s">
-</a>
-
-<h3>Lenovo ThinkPad T490s</h3>
-
-<p>
-Intel Core i5-8365U<br>
-16 Go RAM<br>
-SSD 256 Go<br>
-Écran 14 pouces
-</p>
-
-<p>
-Ordinateur professionnel – Windows 11 Pro<br>
-Très bon état – Clavier AZERTY
-</p>
-
-<p class="price">
-360 €
-</p>
-
-</div>
-
-    </div>
+  <!-- ================================= -->
+  <!-- LIEN VERS JASON -->
+  <!-- ================================= -->
+    <div class="phone-grid" id="phones"></div>
 
     <div class="contact">
       <p><strong>Intéressé par un appareil ?</strong></p>
@@ -449,6 +373,92 @@ Très bon état – Clavier AZERTY
   <footer>
     © Valinco Phone – Propriano
   </footer>
+    <!-- ================================= -->
+  <!-- Script Jason, rajouté par moi-meme 23-03-2026 -->
+  <!-- ================================= -->
+<script>
+fetch("telephones.json")
+  .then(response => {
+    if (!response.ok) {
+      throw new Error("Impossible de charger telephones.json");
+    }
+    return response.json();
+  })
+  .then(data => {
+    const container = document.getElementById("phones");
+    container.innerHTML = "";
 
+    data.forEach(phone => {
+
+      // 🔴 Statut
+      let statutBadge = "";
+      if (phone.statut === "vendu") {
+        statutBadge = "<p style='color:red;font-weight:bold;'>⛔ Vendu</p>";
+      } else {
+        statutBadge = "<p style='color:green;font-weight:bold;'>✅ Disponible</p>";
+      }
+
+      // 🟠 Badge (optionnel)
+      let badgeHtml = "";
+      if (phone.badge) {
+        badgeHtml = `<p style="color:orange;font-weight:bold;">${phone.badge}</p>`;
+      }
+
+      // 📞 Bouton contact
+      let boutonAction = "";
+      if (phone.contact) {
+        boutonAction += `
+          <p><a href="${phone.contact}">📞 Appeler</a></p>
+        `;
+      }
+
+      // 💳 Bouton paiement (optionnel)
+      if (phone.paiement && phone.statut !== "vendu") {
+        boutonAction += `
+          <p>
+            <a href="${phone.paiement}" target="_blank" style="color:#0d6efd;font-weight:bold;">
+              💳 Réserver / payer
+            </a>
+          </p>
+        `;
+      }
+
+      // 🧱 Carte produit
+      container.innerHTML += `
+        <div class="phone-card">
+
+          <a href="${phone.image}" target="_blank">
+            <img src="${phone.image}" alt="${phone.nom}">
+          </a>
+
+          <h3>${phone.nom}</h3>
+
+          <p style="white-space: pre-line;">
+            ${phone.description}
+          </p>
+
+          <p><strong>${phone.etat}</strong></p>
+
+          ${badgeHtml}
+          ${statutBadge}
+
+          <p class="price">${phone.prix} €</p>
+
+          ${boutonAction}
+
+        </div>
+      `;
+    });
+  })
+  .catch(error => {
+    console.error("Erreur :", error);
+
+    document.getElementById("phones").innerHTML = `
+      <p style="color:red;font-weight:bold;">
+        ❌ Erreur de chargement des téléphones
+      </p>
+    `;
+  });
+</script>
 </body>
 </html>
