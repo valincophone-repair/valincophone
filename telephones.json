@@ -1,5 +1,16 @@
 [
   {
+  "nom": "TCL 3189 Dual Sim Noir",
+  "description": "Écran 2,4\" TFT (240 x 320 px)\nAppareil photo 2 Mpx\nBatterie 2200 mAh\n64 MB RAM – 128 MB stockage",
+  "prix": 49,
+  "image": "img/tcl_3189.webp",
+  "etat": "Neuf",
+  "statut": "disponible",
+  "badge": "🔋 Grande autonomie",
+    "contact": "tel:+33754372233",
+    "paiement": "https://pay.sumup.com/b2c/XCDIASLRGV"
+  },
+  {
     "nom": "Xi Redmi Note10 5G",
     "description": "4 Go RAM – 128 Go\nÉcran 6,5\" FHD+ 90 Hz\nTriple caméra 48 MP\nBatterie 5000 mAh",
     "prix": 200,
@@ -27,7 +38,7 @@
     "prix": 360,
     "image": "img/thinkpad_t490s_i5_8365u.webp",
     "etat": "Occasion",
-    "statut": "disponible",
+    "statut": "vendu",
     "badge": "🔥 Windows 11 Pro",
     "contact": "tel:+33754372233",
     "paiement": "https://pay.sumup.com/b2c/XUZ1ECKGCK"
