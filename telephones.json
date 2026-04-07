@@ -1,18 +1,18 @@
 [
   {
   "nom": "TCL 3189 Dual Sim Noir",
-  "description": "Écran 2,4\" TFT (240 x 320 px)\nAppareil photo 2 Mpx\nBatterie 2200 mAh\n64 MB RAM – 128 MB stockage",
-  "prix": 49,
+  "description": "Écran 2,4 TFT (240 x 320 px)\nAppareil photo 2 Mpx\nBatterie 2200 mAh\nDual SIM",
+  "prix": 59,
   "image": "img/tcl_3189.webp",
   "etat": "Neuf",
   "statut": "disponible",
   "badge": "🔋 Grande autonomie",
     "contact": "tel:+33754372233",
-    "paiement": "https://pay.sumup.com/b2c/XCDIASLRGV"
+    "paiement": "https://pay.sumup.com/b2c/XFHO1YYHIJ"
   },
   {
     "nom": "Xi Redmi Note10 5G",
-    "description": "4 Go RAM – 128 Go\nÉcran 6,5\" FHD+ 90 Hz\nTriple caméra 48 MP\nBatterie 5000 mAh",
+    "description": "4 Go RAM – 128 Go\nÉcran 6,5 FHD+ 90 Hz\nTriple caméra 48 MP\nBatterie 5000 mAh",
     "prix": 200,
     "image": "img/redmi_note10_5g.webp",
     "etat": "Reconditionné",
@@ -23,7 +23,7 @@
   },
   {
     "nom": "Xiaomi Redmi 15C",
-    "description": "4 Go RAM – 128 Go\nÉcran 6,9\" – 120 Hz\nAppareil photo 50 MP\nBatterie longue durée",
+    "description": "4 Go RAM – 128 Go\nÉcran 6,9 – 120 Hz\nAppareil photo 50 MP\nBatterie longue durée",
     "prix": 180,
     "image": "img/redmi_15c_4g_noir.webp",
     "etat": "Neuf",
@@ -45,7 +45,7 @@
   },
   {
     "nom": "TCL 60 5G",
-    "description": "256 Go – 6 Go RAM\nAndroid 15 – Processeur Dimensity 6300\nÉcran 6,7\" IPS – 120 Hz\nBatterie 5200 mAh\n\nGrade A – État proche du neuf.",
+    "description": "256 Go – 6 Go RAM\nAndroid 15 – Processeur Dimensity 6300\nÉcran 6,7 IPS – 120 Hz\nBatterie 5200 mAh\n\nGrade A – État proche du neuf.",
     "prix": 200,
     "image": "img/tcl_grade_a.webp",
     "etat": "Occasion Grade A",
@@ -56,18 +56,18 @@
   },
   {
     "nom": "Samsung Galaxy A40",
-    "description": "64 Go – 4 Go RAM\nÉcran Super AMOLED 5,9\" FHD+\nDouble caméra 16 + 5 Mpx\nCaméra avant 25 Mpx\nBatterie 3100 mAh\n\nGrade AB – Très bon.",
+    "description": "64 Go – 4 Go RAM\nÉcran Super AMOLED 5,9 FHD+\nDouble caméra 16 + 5 Mpx\nCaméra avant 25 Mpx\nBatterie 3100 mAh\n\nGrade AB – Très bon.",
     "prix": 130,
     "image": "img/a40_a405_grade_ab_noir.webp",
     "etat": "Occasion Grade AB",
-    "statut": "disponible",
+    "statut": "vendu",
     "badge": "🔥 Nouvelle technologie",
     "contact": "tel:+33754372233",
     "paiement": "https://pay.sumup.com/b2c/XR52P4U6MW"
   },
   {
     "nom": "Samsung Galaxy A16 4G",
-    "description": "128 Go – Android 14\nSuper AMOLED 6,7\" – 90 Hz\nProcesseur Helio G99\nTriple caméra 50 + 5 + 2 Mpx\nBatterie 5000 mAh\n\nPack complet, Garantie 2 ans.",
+    "description": "128 Go – Android 14\nSuper AMOLED 6,7 – 90 Hz\nProcesseur Helio G99\nTriple caméra 50 + 5 + 2 Mpx\nBatterie 5000 mAh\n\nPack complet, Garantie 2 ans.",
     "prix": 190,
     "image": "img/Samsung_Galaxy_A16_4G_A165_128Go_EU_Bleu_Nuit.webp",
     "etat": "Neuf",
@@ -75,5 +75,27 @@
     "badge": "🔥 S.AMOLED & Autonomie",
     "contact": "tel:+33754372233",
     "paiement": "https://pay.sumup.com/b2c/XRQAR4F9AC"
+  },
+  {
+  "nom": "TCL 5041 4G EU Noir",
+  "description": "Téléphone simple et fiable\nÉcran 1,8 compact\n4G + Bluetooth 5.0\nBatterie amovible 1030 mAh\nLampe de poche intégrée\n\nIdéal seniors",
+  "prix": 49,
+  "image": "img/tcl_5041_noir.webp",
+  "etat": "Neuf",
+  "statut": "disponible",
+  "badge": "🔋 Autonomie & simplicité",
+  "contact": "tel:+33754372233",
+  "paiement": "https://pay.sumup.com/b2c/XJE8HVJJBP"
+  },
+  {
+  "nom": "Samsung Galaxy A17 5G",
+  "description": "4 Go RAM – 128 Go\nÉcran Super AMOLED 6,7 \nTriple caméra 50 MP\n5G + NFC\nBatterie 5000 mAh\n\nNeuf – Garantie 2 ans",
+  "prix": 290,
+  "image": "img/samsung_galaxy_a17_5g_noir.webp",
+  "etat": "Neuf",
+  "statut": "disponible",
+  "badge": "🔥 5G & Super AMOLED",
+  "contact": "tel:+33754372233",
+  "paiement": "https://pay.sumup.com/b2c/XAYL9BMKUR"
   }
 ]
