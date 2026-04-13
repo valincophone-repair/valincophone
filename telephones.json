@@ -54,17 +54,7 @@
     "contact": "tel:+33754372233",
     "paiement": "https://pay.sumup.com/b2c/X7WJL39FX2"
   },
-  {
-    "nom": "Samsung Galaxy A40",
-    "description": "64 Go – 4 Go RAM\nÉcran Super AMOLED 5,9 FHD+\nDouble caméra 16 + 5 Mpx\nCaméra avant 25 Mpx\nBatterie 3100 mAh\n\nGrade AB – Très bon.",
-    "prix": 130,
-    "image": "img/a40_a405_grade_ab_noir.webp",
-    "etat": "Occasion Grade AB",
-    "statut": "vendu",
-    "badge": "🔥 Nouvelle technologie",
-    "contact": "tel:+33754372233",
-    "paiement": "https://pay.sumup.com/b2c/XR52P4U6MW"
-  },
+
   {
     "nom": "Samsung Galaxy A16 4G",
     "description": "128 Go – Android 14\nSuper AMOLED 6,7 – 90 Hz\nProcesseur Helio G99\nTriple caméra 50 + 5 + 2 Mpx\nBatterie 5000 mAh\n\nPack complet, Garantie 2 ans.",
@@ -88,12 +78,23 @@
   "paiement": "https://pay.sumup.com/b2c/XJE8HVJJBP"
   },
   {
+    "nom": "Samsung Galaxy A40",
+    "description": "64 Go – 4 Go RAM\nÉcran Super AMOLED 5,9 FHD+\nDouble caméra 16 + 5 Mpx\nCaméra avant 25 Mpx\nBatterie 3100 mAh\n\nGrade AB – Très bon.",
+    "prix": 130,
+    "image": "img/a40_a405_grade_ab_noir.webp",
+    "etat": "Occasion Grade AB",
+    "statut": "vendu",
+    "badge": "🔥 Nouvelle technologie",
+    "contact": "tel:+33754372233",
+    "paiement": "https://pay.sumup.com/b2c/XR52P4U6MW"
+  },
+  {
   "nom": "Samsung Galaxy A17 5G",
   "description": "4 Go RAM – 128 Go\nÉcran Super AMOLED 6,7 \nTriple caméra 50 MP\n5G + NFC\nBatterie 5000 mAh\n\nNeuf – Garantie 2 ans",
   "prix": 290,
   "image": "img/samsung_galaxy_a17_5g_noir.webp",
   "etat": "Neuf",
-  "statut": "disponible",
+  "statut": "vendu",
   "badge": "🔥 5G & Super AMOLED",
   "contact": "tel:+33754372233",
   "paiement": "https://pay.sumup.com/b2c/XAYL9BMKUR"
