@@ -1,0 +1,47 @@
+/* Fond technologique et accents bleus, sans animation. */
+.site-header {
+  background-color: #071f45;
+  background-image: linear-gradient(90deg, #031936a6, #041d4714 52%, #031936a6), url("bandeau-technologie-bleu.webp");
+  background-position: center, center 48%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-bottom: 2px solid #52cfee;
+}
+.header-inner { min-height: 160px; padding-block: 18px; gap: 1.5rem; }
+.brand { gap: 1rem; }
+.brand-logo { width: 140px; box-shadow: 0 8px 28px #0016334d; }
+.brand small { color: #eff8ff; font-size: .88rem; font-weight: 500; text-shadow: 0 2px 8px #00142b; }
+.header-phone {
+  padding: .8rem 1rem;
+  border: 1px solid #89e4ff66;
+  border-radius: 14px;
+  background: #041934c7;
+  box-shadow: 0 6px 24px #00142b26;
+}
+.header-phone small { color: #d7efff; }
+.header-phone svg { color: #7ce8ff; flex: none; }
+.header-phone span { white-space: nowrap; }
+.header-phone:hover { background: #07417de6; border-color: #89e4ff; }
+.hero-section {
+  background: radial-gradient(ellipse at 85% 34%, #65dff55c, transparent 48%), radial-gradient(ellipse at 12% 95%, #a7c9ff5c, transparent 48%), linear-gradient(135deg, #f8fbff, #eef4ff 50%, #e6f9ff);
+}
+.hero-panel::before {
+  content: "";
+  position: absolute;
+  inset: 4% -4%;
+  background: radial-gradient(ellipse, #4ecfff33, #1977e512 48%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+.device-card { position: relative; box-shadow: 0 34px 70px #174e793d, 0 0 44px #34b9eb26; }
+.floating-card { border: 1px solid #d6f0ff; }
+@media (max-width: 900px) {
+  .brand small { max-width: 145px; }
+}
+@media (max-width: 600px) {
+  .site-header { background-position: center, 55% 48%; }
+  .header-inner { min-height: 116px; padding-block: 12px; gap: .65rem; }
+  .brand-logo { width: 112px; }
+  .header-phone { padding: .65rem .6rem; gap: .4rem; border-radius: 12px; }
+  .header-phone span { font-size: .82rem; }
+}
