@@ -35,6 +35,9 @@
       section.hidden = sectionCards.every(card => card.hidden);
     });
     count.textContent = total + (total === 1 ? ' appareil affiché sur ' : ' appareils affichés sur ') + cards.length;
+    empty.textContent = category.value === 'tablettes' && !cards.some(card => card.dataset.category === 'tablettes')
+      ? 'Aucune tablette n’est proposée pour le moment. Les modèles apparaîtront ici lorsqu’ils seront ajoutés au catalogue.'
+      : 'Aucun appareil ne correspond à votre recherche. Essayez une autre marque ou effacez les filtres.';
     empty.hidden = total !== 0;
   }
   form.hidden = false;
@@ -51,3 +54,4 @@
   });
   update();
 })();
+
