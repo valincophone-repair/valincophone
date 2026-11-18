@@ -51,35 +51,80 @@
 .phone-details a:focus-visible{outline:3px solid #f6b91f;outline-offset:4px}
 @media(max-width:850px){.support-grid{grid-template-columns:1fr}.support-intro{padding-top:2.5rem}}
 @media(max-width:560px){.support-card{padding:1.25rem}.amounts{grid-template-columns:repeat(3,minmax(0,1fr))}.support-intro p{font-size:1rem}}
+
+.support-grid{grid-template-columns:1fr}
+.formula-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin:1.5rem 0}
+.formula-card{display:flex;flex-direction:column;min-width:0;padding:1.4rem;border:1px solid #d4e1f3;border-radius:1rem;background:#fff}
+.formula-card h3{font-size:1.2rem;margin:0 0 .7rem}
+.formula-card .formula-price{color:#071f45;margin:0 0 1rem;font-size:1rem}
+.formula-price strong{font-size:2rem;line-height:1.1}
+.formula-card p{font-size:.98rem}
+.formula-card .formula-description{flex:1}
+.formula-card .button{margin-top:.5rem;width:100%;box-sizing:border-box}
+.formula-card.featured{border:2px solid #175cd3}
+.monthly-conditions{padding:1rem 1.2rem;border-radius:.7rem;background:#e8f0fd}
+.monthly-conditions p:last-child{margin-bottom:0}
+.support-card.once{max-width:760px}
+@media(max-width:1000px){.formula-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.formula-grid{grid-template-columns:1fr}.formula-card{padding:1.2rem}}
 </style></head><body>
-<header class="site-header"><div class="shell header-inner"><div class="brand workshop-brand"><a aria-label="Valinco Phone, accueil" href="/"><img class="brand-logo" src="/logo-valinco-phone.png" alt="Valinco Phone" width="504" height="385" decoding="async"></a><div><small>Atelier indépendant · Propriano</small><details class="donor"><summary>Soutenir l’atelier</summary><p>Soutenez Valinco Phone ponctuellement ou chaque mois, dès 2 €. Les abonnés bénéficient d’un tarif ami : <strong>50 % de réduction sur leurs réparations</strong> et une prise en charge prioritaire, selon la disponibilité des pièces.<br><a style="display:inline-block;margin-top:0.5rem;color:#071f45;text-decoration:underline;font-weight:600" href="/soutenir-atelier.html">Choisir mon soutien</a><br><a style="display:inline-block;margin-top:0.5rem;color:#071f45;text-decoration:underline" href="https://billing.stripe.com/p/login/3cI4gzg8H6OH1oZfoq7Re00">Gérer ou résilier mon abonnement</a></p></details></div></div><a class="header-phone" href="tel:+33754372233"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg><span><small>Appeler l’atelier</small>07 54 37 22 33</span></a></div></header><nav class="main-nav" aria-label="Navigation principale"><div class="shell nav-inner"><div class="nav-links"><a href="/">Accueil</a><a href="/telephones-a-vendre.html">Téléphones &amp; ordinateurs</a><a href="/trouver-modele-telephone.html">Trouver son modèle</a><a href="/FAQ_page.html">FAQ</a></div><a class="nav-cta" href="/demande-devis.html">Demander un devis</a></div></nav>
+<header class="site-header"><div class="shell header-inner"><div class="brand workshop-brand"><a aria-label="Valinco Phone, accueil" href="/"><img class="brand-logo" src="/logo-valinco-phone.png" alt="Valinco Phone" width="504" height="385" decoding="async"></a><div><small>Atelier indépendant · Propriano</small><details class="donor"><summary>Soutenir l’atelier</summary><p>Soutenez Valinco Phone ponctuellement ou chaque mois, dès 2 €. Choisissez votre formule mensuelle : <strong>10 à 50 % de réduction sur vos réparations</strong>, avec des avantages adaptés à votre soutien.<br><a style="display:inline-block;margin-top:0.5rem;color:#071f45;text-decoration:underline;font-weight:600" href="/soutenir-atelier.html">Choisir mon soutien</a><br><a style="display:inline-block;margin-top:0.5rem;color:#071f45;text-decoration:underline" href="https://billing.stripe.com/p/login/3cI4gzg8H6OH1oZfoq7Re00">Gérer ou résilier mon abonnement</a></p></details></div></div><a class="header-phone" href="tel:+33754372233"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg><span><small>Appeler l’atelier</small>07 54 37 22 33</span></a></div></header><nav class="main-nav" aria-label="Navigation principale"><div class="shell nav-inner"><div class="nav-links"><a href="/">Accueil</a><a href="/telephones-a-vendre.html">Téléphones &amp; ordinateurs</a><a href="/trouver-modele-telephone.html">Trouver son modèle</a><a href="/FAQ_page.html">FAQ</a></div><a class="nav-cta" href="/demande-devis.html">Demander un devis</a></div></nav>
 <main class="shell">
 <section class="support-intro" aria-labelledby="support-title">
 <span class="eyebrow">Les amis de l’atelier</span>
 <h1 id="support-title">Vous soutenez l’atelier.<br>Je prends soin de vos appareils.</h1>
-<p>Votre soutien fait vivre un atelier indépendant à Propriano. En retour, vous bénéficiez d’un tarif ami et d’une prise en charge prioritaire pour vos réparations.</p>
+<p>Votre soutien fait vivre un atelier indépendant à Propriano. Choisissez le soutien qui vous ressemble : chaque formule mensuelle vous ouvre un tarif ami et des avantages adaptés à vos besoins.</p>
 </section>
 <section class="phone-details" aria-labelledby="phone-details-title">
 <h2 id="phone-details-title">Votre téléphone associé à votre soutien</h2>
 <p>Au moment du paiement, indiquez <strong>la marque, le modèle exact et la couleur de votre téléphone</strong>, sans tenir compte de sa coque. Ces trois informations sont demandées pour un soutien ponctuel comme pour un abonnement.</p>
-<p>Elles permettent à l’atelier d’anticiper les besoins en pièces de rechange et de préparer les réparations plus rapidement, selon leur disponibilité.</p>
+<p>Selon votre formule, elles permettent à l’atelier d’identifier les pièces adaptées à votre téléphone et d’anticiper leur préparation, selon leur disponibilité.</p>
 <p>Un doute sur le modèle ? <a href="/trouver-modele-telephone.html">Voici comment le retrouver</a>. Si vous changez de téléphone, contactez l’atelier pour mettre à jour ces informations.</p>
 </section>
 <div class="support-grid">
 <section class="support-card monthly" aria-labelledby="monthly-title">
 <span class="eyebrow">Un soutien régulier</span>
-<h2 id="monthly-title">Chaque mois, à votre rythme</h2>
-<p class="benefit"><strong>50 % de réduction sur vos réparations</strong> pendant votre abonnement.</p>
-<ul><li>Une prise en charge prioritaire, selon la disponibilité des pièces.</li><li>Les mêmes avantages, quel que soit le montant choisi.</li><li><strong>Sans engagement de durée.</strong> Résiliable à tout moment.</li></ul>
-<p><strong>Choisissez votre soutien mensuel :</strong></p>
-<div class="amounts" aria-label="Montants de soutien mensuel"><a class="amount-choice" href="https://buy.stripe.com/3cI4gzg8H6OH1oZfoq7Re00" aria-label="Soutenir l’atelier à hauteur de 2 euros par mois"><strong>2 €</strong><span>par mois</span></a>
-<a class="amount-choice" href="https://buy.stripe.com/eVqdR92hR5KD5Ffdgi7Re02" aria-label="Soutenir l’atelier à hauteur de 5 euros par mois"><strong>5 €</strong><span>par mois</span></a>
-<a class="amount-choice" href="https://buy.stripe.com/fZu8wP2hR1unc3Dekm7Re03" aria-label="Soutenir l’atelier à hauteur de 10 euros par mois"><strong>10 €</strong><span>par mois</span></a>
-<a class="amount-choice" href="https://buy.stripe.com/fZu28r2hR7SL6Jj7VY7Re04" aria-label="Soutenir l’atelier à hauteur de 15 euros par mois"><strong>15 €</strong><span>par mois</span></a>
-<a class="amount-choice" href="https://buy.stripe.com/fZudR9g8H3Cv4Bbgsu7Re05" aria-label="Soutenir l’atelier à hauteur de 20 euros par mois"><strong>20 €</strong><span>par mois</span></a></div>
+<h2 id="monthly-title">Cinq façons de soutenir l’atelier</h2>
+<p>De 2 à 20 € par mois, choisissez les avantages qui vous conviennent. <strong>Sans engagement de durée, résiliable à tout moment.</strong></p>
+<div class="formula-grid">
+<article class="formula-card" aria-labelledby="formula-2">
+<h3 id="formula-2">Coup de pouce</h3>
+<p class="formula-price"><strong>2 €</strong> / mois</p>
+<p class="formula-description">Merci de soutenir l’atelier ! Vous bénéficiez de <strong>10 % de réduction</strong> sur vos réparations et d’un accompagnement attentif. Nous mettons tout en œuvre pour vous aider.</p>
+<a class="button button-primary" href="https://buy.stripe.com/bJe6oH09J3Cvd7H6RU7Re06" aria-label="Choisir Coup de pouce à 2 euros par mois">Choisir 2 € / mois</a>
+</article>
+<article class="formula-card" aria-labelledby="formula-5">
+<h3 id="formula-5">Priorité</h3>
+<p class="formula-price"><strong>5 €</strong> / mois</p>
+<p class="formula-description">Votre soutien vous donne accès à <strong>20 % de réduction</strong> sur vos réparations, à une prise en charge prioritaire et à des conseils personnalisés pour votre téléphone.</p>
+<a class="button button-primary" href="https://buy.stripe.com/dRmdR9bSreh9c3Da467Re07" aria-label="Choisir Priorité à 5 euros par mois">Choisir 5 € / mois</a>
+</article>
+<article class="formula-card" aria-labelledby="formula-10">
+<h3 id="formula-10">Anticipation</h3>
+<p class="formula-price"><strong>10 €</strong> / mois</p>
+<p class="formula-description">Profitez de <strong>30 % de réduction</strong> et d’une prise en charge prioritaire. Nous identifions à l’avance les références des pièces adaptées à votre téléphone pour accélérer leur commande en cas de panne.</p>
+<a class="button button-primary" href="https://buy.stripe.com/28E00j09J2yrgjT2BE7Re08" aria-label="Choisir Anticipation à 10 euros par mois">Choisir 10 € / mois</a>
+</article>
+<article class="formula-card" aria-labelledby="formula-15">
+<h3 id="formula-15">Prévoyance</h3>
+<p class="formula-price"><strong>15 €</strong> / mois</p>
+<p class="formula-description">Bénéficiez de <strong>40 % de réduction</strong> et d’une prise en charge prioritaire. Nous préparons un stock de pièces courantes pour votre téléphone, notamment la batterie et le connecteur de charge, selon leur disponibilité.</p>
+<a class="button button-primary" href="https://buy.stripe.com/00w9AT3lV6OHgjT4JM7Re09" aria-label="Choisir Prévoyance à 15 euros par mois">Choisir 15 € / mois</a>
+</article>
+<article class="formula-card featured" aria-labelledby="formula-20">
+<h3 id="formula-20">Sérénité</h3>
+<p class="formula-price"><strong>20 €</strong> / mois</p>
+<p class="formula-description">Profitez de <strong>50 % de réduction</strong> et de notre priorité de prise en charge la plus élevée. Nous préparons à l’avance les principales pièces de votre téléphone : écran, batterie, connecteur de charge et caméra, selon leur disponibilité, pour intervenir plus rapidement.</p>
+<a class="button button-primary" href="https://buy.stripe.com/9B614n4pZ8WP1oZ5NQ7Re0a" aria-label="Choisir Sérénité à 20 euros par mois">Choisir 20 € / mois</a>
+</article>
+</div>
+<div class="monthly-conditions">
+<p><strong>Un tarif ami pour votre téléphone déclaré.</strong> La réduction s’applique au prix total de sa réparation, pièces et main-d’œuvre comprises, pendant votre abonnement. Le devis vous est confirmé avant toute intervention.</p>
+<p>Pour les formules Prévoyance et Sérénité, la disponibilité des pièces préparées à l’atelier est confirmée après identification de votre téléphone. La préparation dépend de l’approvisionnement ; le délai de réparation est précisé après diagnostic.</p>
+</div>
 <p class="terms">Le montant choisi est prélevé chaque mois jusqu’à résiliation. Vous pouvez <a href="https://billing.stripe.com/p/login/3cI4gzg8H6OH1oZfoq7Re00">gérer ou résilier votre abonnement</a> à tout moment : les prélèvements suivants sont arrêtés et vos avantages restent valables jusqu’à la fin de la période déjà payée.</p>
 </section>
-<section class="support-card" aria-labelledby="once-title">
+<section class="support-card once" aria-labelledby="once-title">
 <span class="eyebrow">Un coup de pouce</span>
 <h2 id="once-title">Un soutien ponctuel</h2>
 <p>Choisissez librement le montant de votre soutien, <strong>à partir de 2 €</strong>. Un seul versement, sans abonnement.</p>
@@ -94,6 +139,8 @@
 <p>Lors de votre <a href="/demande-devis.html">demande de devis</a>, indiquez l’adresse e-mail utilisée pour votre soutien. Je vérifie votre abonnement ou votre versement dans Stripe, puis je vous confirme le tarif avant toute intervention.</p>
 <h3>Comment arrêter le soutien mensuel ?</h3>
 <p>Ouvrez <a href="https://billing.stripe.com/p/login/3cI4gzg8H6OH1oZfoq7Re00">votre espace abonné</a> avec l’adresse e-mail utilisée pour le paiement. Vous pourrez résilier vous-même, consulter vos factures ou mettre à jour votre moyen de paiement. La résiliation prend effet à la fin de la période déjà payée.</p>
+<h3>Quelle prise en charge pour une pièce défectueuse ?</h3>
+<p>En cas de défaut d’une pièce de rechange, la garantie commerciale de l’atelier couvre sa valeur à hauteur du prix hors taxes affiché sur le site du fournisseur. Cette garantie s’ajoute aux garanties légales applicables, qu’elle ne limite pas. Les modalités de prise en charge sont précisées sur le devis de réparation.</p>
 <h3>Une question ?</h3>
 <p>Appelez-moi au <a href="tel:+33754372233">07 54 37 22 33</a>. Nous ferons le point ensemble.</p>
 </section>
