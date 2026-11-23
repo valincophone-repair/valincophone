@@ -22,3 +22,9 @@
 .atelier-deal-contact{margin:.85rem 0 0;font-size:.77rem;line-height:1.55;color:#647489}.atelier-deal-contact a{white-space:nowrap}
 @media(max-width:760px){.atelier-deal{grid-template-columns:1fr}.atelier-deal-photo{width:min(100%,250px);justify-self:center}.atelier-deal-content{width:100%}.atelier-deals{scroll-margin-top:120px}}
 @media(max-width:380px){.atelier-deal-purchase{align-items:flex-start;flex-direction:column}.atelier-deal-purchase .button{width:100%}.atelier-deal-specs{gap:.7rem}}
+
+/* Une sélection de téléphones garantis, mise en avant dans l’introduction. */
+.catalogue-assurance{display:flex;align-items:flex-start;gap:.85rem;max-width:700px;margin:1.4rem 0;padding:1rem 1.1rem;border:1px solid #b8d2ed;border-left:4px solid #0969da;border-radius:.85rem;background:#fff}
+.catalogue-assurance svg{flex:0 0 28px;color:#0969da;margin-top:.1rem}
+.catalogue-hero .catalogue-assurance p{margin:0;font-size:1rem;line-height:1.6;color:#254568}
+.catalogue-assurance strong{font-weight:700;color:#071f45}
