@@ -1,0 +1,44 @@
+.support-page{padding-bottom:3rem}
+.support-intro{padding:2.5rem 0 1.8rem;text-align:center}
+.support-intro h1{font-size:clamp(2rem,4.5vw,3.2rem);line-height:1.12;margin:.6rem 0 0;text-wrap:balance}
+.support-grid{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:1.5rem;align-items:start}
+.support-card{min-width:0;overflow:hidden;border:1px solid #cbdcec;border-radius:1.4rem;background:#fff;box-shadow:0 8px 30px #071f4508}
+.support-card.monthly{border:2px solid #175cd3}
+.offer-visual{height:230px;overflow:hidden;background:#f4f8ff}
+.offer-visual img{display:block;width:100%;height:100%;object-fit:contain}
+.offer-content{padding:1.6rem;text-align:center}
+.support-card h2{font-size:1.9rem;line-height:1.2;margin:0 0 .65rem}
+.offer-caption{margin:0;color:#4c607c;font-size:1rem;line-height:1.5}
+.offer-price{display:flex;justify-content:center;align-items:baseline;flex-wrap:wrap;gap:.65rem;margin:1rem 0;color:#071f45}
+.offer-price strong{font-size:3.3rem;line-height:1.1;letter-spacing:-.04em}
+.offer-price span{font-size:1rem;color:#4c607c}
+.plain-condition{margin:1.4rem 0;color:#4c607c;font-size:.94rem}
+.coffee-button{width:100%;white-space:normal;text-align:center}
+.benefits{display:grid;grid-template-columns:1fr 1fr;gap:.75rem;list-style:none;padding:0;margin:1.4rem 0 1rem;text-align:left}
+.benefits li{display:flex;align-items:center;gap:.65rem;min-width:0;padding:.8rem .65rem;border-radius:.8rem;background:#f0f6ff}
+.benefit-symbol{display:flex;align-items:center;justify-content:center;flex:0 0 38px;color:#175cd3}
+.discount-symbol{font-size:1.05rem;font-weight:800;white-space:nowrap;letter-spacing:-.04em}
+.benefits strong{display:block;font-size:.94rem;font-weight:700;line-height:1.3;color:#071f45}
+.benefits small{display:block;margin-top:.25rem;font-size:.875rem;line-height:1.4;color:#4c607c}
+.phone-scope{margin:0 0 1.1rem;font-size:.875rem;color:#4c607c}
+.amounts{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:.5rem;margin:0 0 .75rem}
+.amount-choice{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:76px;padding:.75rem .2rem;border:2px solid #175cd3;border-radius:.7rem;background:#175cd3;color:#fff;text-decoration:none}
+.amount-choice strong{font-size:1.45rem;white-space:nowrap}.amount-choice span{font-size:.875rem}
+.amount-choice:hover{background:#103f91;border-color:#103f91}
+.support-page a:focus-visible,.support-details summary:focus-visible{outline:3px solid #e6a100;outline-offset:4px}
+.renewal-note{margin:0;font-size:.875rem;line-height:1.5;color:#4c607c}
+.cancel-note{margin:1.1rem 0 .7rem;padding:.8rem;background:#e9f6ee;border-radius:.65rem;color:#205537;line-height:1.5}
+.manage-link{font-size:.94rem;color:#175cd3;text-decoration:underline;text-underline-offset:3px}
+.payment-note{text-align:center;font-size:.875rem;color:#4c607c;margin:1.25rem 0 2.5rem}
+.support-more{max-width:920px;margin:0 auto}.support-more>h2{font-size:1.4rem;margin-bottom:1rem}
+.support-details{margin:.65rem 0;border:1px solid #dce5f0;border-radius:.8rem;background:#fff}
+.support-details>summary{padding:1.1rem 1.25rem;cursor:pointer;font-size:1rem;font-weight:650;color:#071f45}
+.support-details-body{padding:0 1.25rem 1.25rem;color:#4c607c;line-height:1.65}
+.support-details-body h2{font-size:1.2rem;line-height:1.35;margin:.6rem 0}.support-details-body h3{font-size:1rem;font-weight:700;margin:1rem 0 .5rem}
+.support-details-body p{margin:.65rem 0}.support-details-body a{color:#175cd3;text-decoration:underline;text-underline-offset:3px}
+.support-details-body section{margin:0 0 1rem;padding:0}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(min-width:761px){.once .offer-visual{height:300px}.once .offer-content{padding-block:2rem}}
+@media(max-width:960px) and (min-width:761px){.offer-content{padding:1.15rem}.benefits li{flex-direction:column;align-items:flex-start}.benefit-symbol{flex-basis:auto;min-height:28px}}
+@media(max-width:760px){.support-grid{grid-template-columns:1fr;max-width:580px;margin-inline:auto}.support-intro{padding:2rem 0 1.5rem}.offer-visual{height:200px}.offer-content{padding:1.25rem}}
+@media(max-width:400px){.benefits{gap:.55rem}.benefits li{flex-direction:column;align-items:flex-start;padding:.75rem}.benefit-symbol{flex-basis:auto;min-height:28px}.amounts{gap:.3rem}.amount-choice strong{font-size:1.2rem}.amount-choice span{font-size:.875rem}.offer-content{padding:1rem}}
