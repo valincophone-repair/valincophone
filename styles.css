@@ -2,3 +2,11 @@
 .catalogue-hero { padding-block:3rem; }
 /* Logo personnel Valinco Phone */
 .header-inner{padding-block:12px}.brand-logo{display:block;width:126px;height:auto;flex:none;border-radius:12px;background:#fff}@media(max-width:600px){.header-inner{gap:1rem;padding-block:10px}.brand-logo{width:96px}}
+
+/* Retrait de premiere ligne pour les paragraphes de texte du site. */
+:root{--paragraph-indent:1.5em}
+p{text-indent:var(--paragraph-indent)}
+/* Les prix, statuts et libelles centres ne sont pas des paragraphes de lecture. */
+p:is(.price,.catalogue-updated,.catalogue-count,.offer-caption,.phone-scope,.renewal-note,.cancel-note,.payment-note),
+.catalogue-purchase p,.coffee-copy p,.button{ text-indent:0 }
+@media(max-width:560px){:root{--paragraph-indent:1em}}
