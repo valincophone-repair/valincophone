@@ -2,7 +2,8 @@
 .hero-grid { min-height: auto; padding-block: clamp(2.4rem, 5vw, 4.8rem); }
 .hero-copy > p, .home-section p, .home-deposit p { text-indent: 0; }
 .hero-actions { margin: 1.4rem 0 .45rem; }
-.hero-panel { min-height: 340px; }
+.hero-copy h1 { font-size: clamp(2.05rem, 4.25vw, 3.7rem); line-height: 1.06; }
+.hero-panel { min-height: 340px; row-gap: 1.2rem; }
 .device-card { width: min(230px, 65vw); }
 .device-screen { position: relative; overflow: hidden; justify-content: end; padding: 1.4rem .65rem; }
 .device-screen::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 42%, #061a3780 70%, #04152cf0); }
@@ -11,7 +12,7 @@
 .device-screen strong { font-size: 1.08rem; }
 .device-screen .pulse-ring { border: 0; background: #071f4580; width: 40px; height: 40px; box-shadow: none; }
 .device-screen .pulse-ring svg { width: 20px; }
-a.floating-card { bottom: 9%; text-decoration: underline; text-underline-offset: .2em; }
+a.floating-card { position: static; justify-self: center; margin-top: .3rem; text-decoration: underline; text-underline-offset: .2em; }
 .home-section, .home-deposit { padding-block: clamp(2.6rem, 6vw, 5rem); }
 #depots-restitutions, #avant-depot, #restitution, #tests-apres-reparation { scroll-margin-top: 140px; }
 .home-section h2, .home-deposit h2 { margin: 0 0 1.2rem; }
@@ -24,7 +25,7 @@ a.floating-card { bottom: 9%; text-decoration: underline; text-underline-offset:
 .home-service span, .home-place-label { display: block; padding: .85rem 1rem; }
 .home-service span, .home-place-label strong { font-size: 1.08rem; line-height: 1.25; font-weight: 700; }
 .home-service span, .home-place-label strong { display: flex; align-items: center; justify-content: space-between; gap: .5rem; }
-.home-service b, .home-place b { font-size: 1rem; color: #21609b; }
+.home-service b, .home-place b { flex: none; width: .5rem; height: .5rem; margin-right: .18rem; border: solid #21609b; border-width: 2px 2px 0 0; transform: rotate(45deg); font-size: 0; }
 .home-service:hover span, .home-place a:hover strong { text-decoration: underline; text-underline-offset: .2em; }
 .home-secondary, .home-other-places { padding: 0; list-style: none; }
 .home-secondary { display: flex; gap: .65rem 1.5rem; flex-wrap: wrap; margin: 1rem 0 .25rem; }
@@ -52,7 +53,7 @@ a.floating-card { bottom: 9%; text-decoration: underline; text-underline-offset:
 .home-more { width: fit-content; max-width: 100%; }
 .home-more > summary { display: flex; align-items: center; gap: .45rem; cursor: pointer; min-height: 44px; width: fit-content; color: #14539a; text-decoration: underline; text-underline-offset: .22em; font-size: .94rem; font-weight: 600; list-style: none; }
 .home-more > summary::-webkit-details-marker { display: none; }
-.home-more > summary::before { content: "i"; flex: none; display: grid; place-items: center; width: 1rem; height: 1rem; border: 1px solid currentColor; border-radius: 100%; font: bold .75rem/1 Georgia, serif; }
+.home-more > summary::before { content: "i"; content: "i" / ""; flex: none; display: grid; place-items: center; width: 1rem; height: 1rem; border: 1px solid currentColor; border-radius: 100%; font: bold .75rem/1 Georgia, serif; }
 .home-deposit .home-more > summary { color: #a6e3ef; }
 .home-note { box-sizing: border-box; color: #163655; background: white; padding: 1rem 1.2rem; border: 1px solid #c2d3e4; border-radius: .9rem; line-height: 1.5; overflow-wrap: anywhere; font-size: .94rem; text-align: left; }
 .home-note p, .home-note ul { color: #25435e; margin: 0; text-indent: 0; font-size: inherit; }
@@ -70,12 +71,12 @@ a.floating-card { bottom: 9%; text-decoration: underline; text-underline-offset:
 }
 @media (max-width: 600px) {
   .hero-grid { display: flex; flex-direction: column; align-items: stretch; padding-block: 1.75rem; gap: .6rem; }
-  .hero-panel { display: flex; justify-content: flex-end; align-items: center; padding: .3rem .8rem .5rem; }
+  .hero-panel { display: flex; flex-direction: row-reverse; justify-content: space-between; align-items: center; padding: .3rem .8rem .5rem; }
   .device-card { width: 124px; aspect-ratio: .78; padding: 5px; border-radius: 1.15rem; transform: rotate(5deg); }
   .device-screen { border-radius: .9rem; padding: .5rem; }
   .device-screen .pulse-ring { display: none; }
   .device-screen strong { font-size: .78rem; margin: 0; }
-  a.floating-card { left: 0; bottom: 22%; padding: .65rem .85rem; }
+  a.floating-card { max-width: 54%; margin: 0; padding: .65rem .85rem; }
   .home-services { grid-template-columns: 1fr; gap: .55rem; }
   .home-service { display: grid; grid-template-columns: 92px minmax(0, 1fr); align-items: center; }
   .home-service img { aspect-ratio: 4 / 3; }
