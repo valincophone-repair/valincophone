@@ -6,7 +6,7 @@
 @media(max-width:560px){.catalogue-grid{grid-template-columns:1fr}.catalogue-filters{padding:1rem;gap:.8rem}.catalogue-search{grid-column:1/-1}.catalogue-filters>button{grid-column:1/-1}.catalogue-image{height:230px}.catalogue-card-body{padding:1.2rem}.catalogue-section{margin-block:2rem 3rem}}
 
 
-/* Appareils proposés personnellement par Nicolas, hors catalogue fournisseur. */
+/* Appareils proposés personnellement par le technicien, hors catalogue fournisseur. */
 .atelier-deals{margin:0 0 2.5rem;scroll-margin-top:150px;padding:clamp(1.1rem,3vw,2rem);border:1px solid #d5e5de;border-radius:1.4rem;background:#eff7f2}
 .atelier-deals-heading{margin-bottom:1.3rem}.atelier-deals-eyebrow{display:block;font-size:.75rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#316549;margin-bottom:.4rem}
 .atelier-deals h2{margin:0 0 .5rem;font-size:clamp(1.65rem,3vw,2.15rem);line-height:1.2;color:#143c2c}.atelier-deals-heading p{margin:0;color:#496458;font-size:.95rem}
