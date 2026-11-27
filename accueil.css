@@ -99,3 +99,7 @@ a.floating-card { position: static; justify-self: center; margin-top: .3rem; tex
 .expand-photo { position: absolute; bottom: .55rem; right: .55rem; border-radius: .4rem; padding: .1rem .45rem; color: white; background: #071f45db; font: 700 1.1rem/1.5 system-ui, sans-serif; }
 .home-place-photo .home-note img { width: 100%; height: auto; max-height: 38vh; aspect-ratio: auto; object-fit: contain; }
 .home-place-photo .home-note { padding: .6rem; }
+
+/* Troisième lieu de rencontre photographié. */
+@media (min-width: 851px) { .home-places { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.home-place-photo > summary > .home-photo-ble-gourmand { object-position: 50% 25%; }
