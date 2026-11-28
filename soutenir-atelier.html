@@ -17,7 +17,23 @@
 .donor p{position:absolute;top:100%;left:0;width:21rem;box-sizing:border-box;background:white;color:#071f45;font-size:.9375rem;line-height:1.5;margin:.2rem 0 0;padding:.8rem 1rem;border-radius:.5rem;box-shadow:0 4px 18px #071f4533}
 @media(max-width:700px){.header-inner{position:relative;flex-wrap:wrap}.donor{position:static}.donor p{top:auto;left:0;width:min(21rem,100%)}}
 </style>
-<link rel="stylesheet" href="/soutenir-atelier.css?v=20261127-formule"></head><body>
+<link rel="stylesheet" href="/soutenir-atelier.css?v=20261127-formule"><style>
+
+.services-compact { gap:.65rem; }
+.services-compact li { display:block; padding:0; border:0; position:relative; }
+.services-compact .benefit { height:100%; border:1px solid #dce5f0; border-radius:.8rem; background:#f5f8fd; }
+.services-compact li:nth-child(-n+2) .benefit { background:#eaf3ff; border-color:#c3d8f3; }
+.benefit summary { display:flex; align-items:center; gap:.65rem; padding:1rem; min-height:90px; cursor:pointer; list-style:none; }
+.benefit summary::-webkit-details-marker { display:none; }
+.benefit summary h3 { margin:0; flex:1; font-size:1rem; }
+.benefit-info { display:grid; place-items:center; flex:none; width:1.15rem; height:1.15rem; border:1px solid #8098b8; border-radius:50%; color:#47698d; font-size:.75rem; font-weight:700; }
+.benefit[open] summary { background:#eaf3ff; border-radius:.8rem; }
+.services-compact li:has(.benefit[open]) { z-index:2; }
+.benefit-description { position:absolute; top:calc(100% - 2px); left:0; right:0; padding:1rem; background:white; border:1px solid #c3d8f3; border-radius:.65rem; box-shadow:0 8px 24px #102c4e24; }
+.benefit-description p { margin:0; }
+.benefit-description a { color:#1657a9; text-decoration:underline; }
+@media(max-width:600px) { .services-compact { gap:.5rem; } .services-compact li { padding:0; } .benefit summary { min-height:64px; padding:.85rem; } .benefit-description { position:static; border:0; border-top:1px solid #dce5f0; box-shadow:none; border-radius:0 0 .8rem .8rem; } }
+</style></head><body>
 <header class="site-header"><div class="shell header-inner"><div class="brand workshop-brand"><a aria-label="Valinco Phone, accueil" href="/"><img class="brand-logo" src="/logo-valinco-phone.png" alt="Valinco Phone" width="504" height="385" decoding="async"></a><div><small>Atelier indépendant · Propriano</small><details class="donor"><summary>Soutenir l’atelier</summary><p>Soutenez l’atelier pour 5&nbsp;€ par mois et profitez des avantages pour votre téléphone. Vous pouvez aussi offrir un café ponctuellement.<br><a style="display:inline-block;margin-top:0.5rem;color:#071f45;text-decoration:underline;font-weight:600" href="/soutenir-atelier.html">Choisir mon soutien</a><br><a style="display:inline-block;margin-top:0.5rem;color:#071f45;text-decoration:underline" href="https://billing.stripe.com/p/login/3cI4gzg8H6OH1oZfoq7Re00">Gérer ou résilier mon abonnement</a></p></details></div></div><a class="header-phone" href="tel:+33754372233"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg><span><small>Appeler l’atelier</small>07 54 37 22 33</span></a></div></header><nav class="main-nav" aria-label="Navigation principale"><div class="shell nav-inner"><div class="nav-links"><a href="/">Accueil</a><a href="/telephones-a-vendre.html">Téléphones &amp; ordinateurs</a><a href="/trouver-modele-telephone.html">Trouver son modèle</a><a href="/FAQ_page.html">FAQ</a></div><a class="nav-cta" href="/demande-devis.html">Demander un devis</a></div></nav>
 <main class="shell support-page">
   <section class="offer" aria-labelledby="support-title">
@@ -34,38 +50,14 @@
     </div>
     <div class="offer-body">
       <h2>Les avantages pour votre téléphone</h2>
-      <ul class="services">
-        <li class="featured">
-          <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="m4 20 6-6M15 4a5 5 0 0 0-6 6l-6 6a2.1 2.1 0 0 0 3 3l6-6a5 5 0 0 0 6-6l-3 3-3-3 3-3Z"/></svg></span>
-          <div><h3>Des remises exceptionnelles, jusqu’à 50&nbsp;%</h3>
-          <p>Sur les grosses réparations, comme le reconditionnement complet de votre téléphone ou la désoxydation de ses composants après une chute en mer. Votre remise est précisée sur le devis.</p></div>
-        </li>
-        <li class="featured">
-          <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M10 5h4m-3 14h2"/></svg></span>
-          <div><h3>20&nbsp;% de remise sur un téléphone de remplacement</h3>
-          <p>Si le diagnostic de l’atelier confirme que votre téléphone est irréparable, vous bénéficiez de 20&nbsp;% de remise sur le téléphone de votre choix parmi <a href="/telephones-a-vendre.html">tous les téléphones disponibles au catalogue</a>.</p></div>
-        </li>
-        <li>
-          <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="m12 2 8 4v6c0 4-3 7-8 10-5-3-8-6-8-10V6l8-4Z"/><path d="m8.5 12 2.3 2.3 4.7-5"/></svg></span>
-          <div><h3>Une coque et une vitre offertes dès l’inscription</h3>
-          <p>Vous recevez une coque (d’une valeur de 20 à 25&nbsp;€) et une vitre de protection (environ 10 à 15&nbsp;€), puis une nouvelle coque et une nouvelle vitre chaque année.</p></div>
-        </li>
-        <li>
-          <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false"><rect x="2" y="6" width="17" height="12" rx="2"/><path d="M22 10v4M11 8.5 8.5 12h4l-2 3.5"/></svg></span>
-          <div><h3>Un remplacement de batterie offert après 12 mois</h3>
-          <p>Dès votre premier anniversaire d’abonnement, vous pouvez faire remplacer votre batterie à l’atelier. La batterie et la pose sont comprises (80&nbsp;€ en moyenne).</p></div>
-        </li>
-        <li>
-          <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M21 11.5a8.5 8.5 0 0 1-8.8 8.5 10 10 0 0 1-4.2-1l-5 2 1.6-4.5A8.6 8.6 0 1 1 21 11.5Z"/><path d="M8 10h8M8 13h5"/></svg></span>
-          <div><h3>Des conseils en priorité</h3>
-          <p>Je vous accompagne personnellement pour entretenir votre téléphone et choisir la réparation adaptée.</p></div>
-        </li>
-        <li>
-          <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="m3 7 9-4 9 4v10l-9 4-9-4V7Zm0 0 9 4 9-4m-9 4v10m-5-16 9 4"/></svg></span>
-          <div><h3>Des pièces commandées à l’avance</h3>
-          <p>Une fois le modèle confirmé, je peux commander les pièces avant votre rendez-vous, selon leur disponibilité.</p></div>
-        </li>
-      </ul>
+      <ul class="services services-compact">
+<li><details class="benefit"><summary><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="m12 2 8 4v6c0 4-3 7-8 10-5-3-8-6-8-10V6l8-4Z"/><path d="m8.5 12 2.3 2.3 4.7-5"/></svg></span><h3>Une coque et une vitre de protection offertes</h3><span class="benefit-info" aria-hidden="true">i</span></summary><div class="benefit-description"><p>Dès l’inscription, vous recevez une coque (d’une valeur de 20 à 25&nbsp;€) et une vitre de protection (environ 10 à 15&nbsp;€), puis une nouvelle coque et une nouvelle vitre chaque année.</p></div></details></li>
+<li><details class="benefit"><summary><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false"><rect x="2" y="6" width="17" height="12" rx="2"/><path d="M22 10v4M11 8.5 8.5 12h4l-2 3.5"/></svg></span><h3>Un remplacement de batterie offert</h3><span class="benefit-info" aria-hidden="true">i</span></summary><div class="benefit-description"><p>Dès votre premier anniversaire d’abonnement, vous pouvez faire remplacer votre batterie à l’atelier. La batterie et la pose sont comprises (80&nbsp;€ en moyenne).</p></div></details></li>
+<li><details class="benefit"><summary><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="m4 20 6-6M15 4a5 5 0 0 0-6 6l-6 6a2.1 2.1 0 0 0 3 3l6-6a5 5 0 0 0 6-6l-3 3-3-3 3-3Z"/></svg></span><h3>Des remises exceptionnelles, jusqu’à 50&nbsp;%</h3><span class="benefit-info" aria-hidden="true">i</span></summary><div class="benefit-description"><p>Sur les grosses réparations, comme le reconditionnement complet de votre téléphone ou la désoxydation de ses composants après une chute en mer. Votre remise est précisée sur le devis.</p></div></details></li>
+<li><details class="benefit"><summary><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M10 5h4m-3 14h2"/></svg></span><h3>20&nbsp;% de remise sur un téléphone de remplacement</h3><span class="benefit-info" aria-hidden="true">i</span></summary><div class="benefit-description"><p>Si le diagnostic de l’atelier confirme que votre téléphone est irréparable, vous bénéficiez de 20&nbsp;% de remise sur le téléphone de votre choix parmi <a href="/telephones-a-vendre.html">tous les téléphones disponibles au catalogue</a>.</p></div></details></li>
+<li><details class="benefit"><summary><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M21 11.5a8.5 8.5 0 0 1-8.8 8.5 10 10 0 0 1-4.2-1l-5 2 1.6-4.5A8.6 8.6 0 1 1 21 11.5Z"/><path d="M8 10h8M8 13h5"/></svg></span><h3>Des conseils en priorité</h3><span class="benefit-info" aria-hidden="true">i</span></summary><div class="benefit-description"><p>Je vous accompagne personnellement pour entretenir votre téléphone et choisir la réparation adaptée.</p></div></details></li>
+<li><details class="benefit"><summary><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="m3 7 9-4 9 4v10l-9 4-9-4V7Zm0 0 9 4 9-4m-9 4v10m-5-16 9 4"/></svg></span><h3>Des pièces commandées à l’avance</h3><span class="benefit-info" aria-hidden="true">i</span></summary><div class="benefit-description"><p>Une fois le modèle confirmé, je peux commander les pièces avant votre rendez-vous, selon leur disponibilité.</p></div></details></li>
+</ul>
       <aside class="savings" aria-labelledby="savings-title">
         <h3 id="savings-title">Environ 50 à 60&nbsp;€ d’économie avec les trois prestations</h3>
         <p>Au bout de 12 mois, vous avez versé <strong>60&nbsp;€</strong>. Vous avez reçu la coque et la vitre, et vous bénéficiez alors du remplacement de votre batterie. Ces trois prestations représentent une valeur estimée de <strong>110 à 120&nbsp;€</strong>. Les remises sur les grosses réparations s’y ajoutent.</p>
@@ -90,6 +82,7 @@
     </details>
     <details class="support-details"><summary>Paiement, résiliation et garanties</summary>
       <div class="support-details-body">
+        <p>Le remplacement de batterie est offert après 12 mois d’abonnement, dès votre premier anniversaire. La batterie et la pose sont comprises.</p>
         <p>Stripe prélève 5&nbsp;€ chaque mois jusqu’à résiliation. TVA non applicable. Dans <a href="https://billing.stripe.com/p/login/3cI4gzg8H6OH1oZfoq7Re00">votre espace abonné</a>, vous pouvez consulter vos factures et résilier à tout moment. Vos avantages restent valables jusqu’à la fin de la période payée.</p>
         <p>Les réparations qui donnent droit à une remise font l’objet d’un devis. Si votre téléphone est irréparable, vous pouvez acheter un téléphone du catalogue avec la remise de 20&nbsp;%. L’abonnement ne prévoit pas d’indemnisation. Les circonstances de la casse ne vous font pas perdre vos avantages.</p>
         <p>En cas de défaut d’une pièce de rechange, la garantie commerciale de l’atelier couvre sa valeur à hauteur du prix hors taxes affiché sur le site du fournisseur. Cette garantie s’ajoute aux garanties légales applicables, qu’elle ne limite pas. Les modalités de prise en charge sont précisées sur le devis de réparation.</p>
@@ -100,4 +93,24 @@
     </details>
   </div>
 </main><footer class="site-footer"><div class="shell footer-grid"><div><strong>Valinco Phone</strong><p>Réparation de téléphones et d’ordinateurs à Propriano.</p></div><div><strong>Contact</strong><a href="tel:+33754372233">07 54 37 22 33</a><a href="mailto:valinco.phone@gmail.com">valinco.phone@gmail.com</a></div><div><strong>Points de rendez-vous</strong><a href="/#depots-restitutions">Voir les points de rendez-vous</a><p>Dépôt en main propre avec votre technicien, sur rendez-vous. Restitution au lieu convenu, selon les modalités définies ensemble.</p></div></div><div class="shell footer-bottom">© Valinco Phone · ex-Valinco Cyber · SIRET 41507272700035 · 20110 Propriano</div></footer>
+<script>
+document.querySelectorAll('.benefit').forEach(function (item) {
+  var hoverOpened = false;
+  item.addEventListener('pointerenter', function (event) {
+    if (event.pointerType === 'mouse' && window.matchMedia('(hover: hover)').matches && !item.open) {
+      item.open = true;
+      hoverOpened = true;
+    }
+  });
+  item.querySelector('summary').addEventListener('click', function (event) {
+    if (hoverOpened) { event.preventDefault(); hoverOpened = false; }
+  });
+  item.addEventListener('pointerleave', function () {
+    if (hoverOpened) { item.open = false; hoverOpened = false; }
+  });
+  item.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') { item.open = false; hoverOpened = false; item.querySelector('summary').focus(); }
+  });
+});
+</script>
 </body></html>
